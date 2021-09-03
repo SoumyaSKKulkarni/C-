@@ -1,0 +1,55 @@
+using System;
+
+namespace weekday
+{
+    class Program
+    {
+        enum week { Monday=1,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday};
+        static void Main(string[] args)
+        {
+            week mon=week.Monday;
+            week tue = week.Tuesday;
+            week wed = week.Wednesday;
+            week thu = week.Thursday;
+            week fri = week.Friday;
+            week sat = week.Saturday;
+            week sun = week.Sunday;
+                 Console.WriteLine("Enter a number between 1 and 7");
+                  String n =Console.ReadLine();
+                  int num = int.Parse(n);
+                  if(num>0 && num<=7)
+                  {
+                     switch(num)
+                    {
+                    case 1:
+                        Console.WriteLine(mon + " is a working day");
+                        break;
+                    case 2:
+                        Console.WriteLine(tue + " is a working day");
+                        break;
+                    case 3:
+                        Console.WriteLine(wed + " is a working day");
+                        break;
+                    case 4:
+                        Console.WriteLine(thu + " is a working day");
+                        break;
+                    case 5:
+                        Console.WriteLine(fri + " is a working day");
+                        break;
+                    case 6:
+                        Console.WriteLine(sat + "is a holiday");
+                        break;
+                    case 7:
+                        Console.WriteLine(sun + " is a holiday");
+                        break;
+                }
+                  }
+                  else
+                     {
+               	      Console.WriteLine("Out of range!");
+
+                    }
+       
+        }
+    }
+}
